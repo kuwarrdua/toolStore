@@ -1,0 +1,153 @@
+<!DOCTYPE html>					<!--starting of the document with semantic and well defined HTML and CSS-->
+<html lang="en">				<!--setting up the language-->
+	<head>
+		<meta charset="utf-8">		<!--character encoding-->
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0">  		<!--using this to make it more responsive-->
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">	<!--To make it designer.. yet readable using these fonts-->	
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="icon" href="img/saw.png">
+		<title>Barrie Tool Store</title>				<!--The title of my page-->
+				<!--here using internal css and would use external when putting in all my web pages-->
+	</head>
+	<body>
+		<header>							<!--here comes the content which will be visible to the user -->
+			<div class="topline">
+				<p>The best Tool Store in the town- Opening Soon</p>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html" title="Home">HOME</a></li>
+					<li id="drill"><a href="drill.html" title="Drills">DRILLS</a>					<!--nestinf i.e lists in lists-->
+						<ul>
+							<li><a href="drill.html#drillpara2" title="Center Drills">CENTER DRILLS</a></li>
+							<li><a href="drill.html#drillpara3" title="Cores Drills">CORE DRILLS</a></li>   <!--proper directions to a page-->
+						</ul>
+					</li>
+					<li><a href="form.html" title="Order Form">ORDER FORM</a>
+						<ul>
+							<li><a href="form.html#track	" title="Track your Order">TRACK YOUR ORDER</a></li>
+						</ul>
+					</li>
+						<li><a href="about.html" title="About Us">ABOUT US</a>
+							<ul>
+								<li><a href="about.html#para" title="Our Address">OUR ADDRESS</a></li>
+							</ul>
+						</li>
+					<li><a href="contact.html" title="Contact Us">CONTACT US</a></li>
+					<li class="font" title="Barrie Tool Store"><a href="http://aws.computerstudi.es/~gcc200430408/index.html">BARRIE TOOL STORE</a></li>
+					<li class="search"><input type="text" name="searchbar"  placeholder="Search...">
+					<button class="btn">Search</button></li>				<!--using the link here to drive the user to the home page-->
+				</ul>
+			</nav>
+		</header>
+		<main>	
+			<section><br><br>
+				<h1>Welcome to the order form. <br>We hope to provide with the best deals and make your day special</h1>
+			</section>
+			<section id="form" style="margin-left:1px;width:80%;margin:0 auto;">
+				<form style="background-image: linear-gradient(to right,white,lightgrey);">
+					<fieldset>
+						<legend>Personal Info:</legend>
+						<div>
+							<label for="fname">First name:</label>				<!--a form to make it more reachable to the people-->
+							<input type="text" name="fname" id="fname" required maxlength="50">               <!--Customer information section-->
+						</div>
+						<div><br>
+							<label for="lname">Last name:</label>
+								<input type="text" name="lname" id="lname" required maxlength="50">
+						</div>
+						<div><br>
+							<label for="phoneno">Phone Number</label>
+							<input type="tel" name="phoneno" id="phoneno" required>
+						</div>
+						<div><br>
+							<label for="email">Email Address </label>
+							<input type="email" name="emailid" id="email" required>
+						</div><br>
+							<p style="font-weight:bold;color:orange;">Housing Information</p>
+						<div><br>
+							<label for="houseno">House or Apartment number</label>
+							<input type="number" name="houseno"  id="houseno">
+						</div>
+						<div><br>
+							<label for="streetname">Street Name</label>
+							<input type="text" name="streetname" id="streetname">
+						</div>
+						<div><br>
+							<label for="province">Province</label>
+							<select id="province" name="province" required>
+								<option value="">choose…</option>
+								<option value="AB">Alberta</option>
+								<option value="BC">British Colombia</option>
+								<option value="ON" selected>Ontario</option>
+								<option value="MB">Manitoba</option>
+								<option value="NB">New Brunswick</option>                           <!--using required attribute whereever necessary-->
+								<option value="NL">Newfoundland</option>
+								<option value="NT">Northwest Territories</option>
+								<option value="NS">Nova Scotia</option>
+								<option value="NV">Nunavut</option>
+								<option value="PE">Prince Edward Island</option>
+								<option value="PQ">Québec</option>								<option value="SK">Saskatchewan</option>
+								<option value="YK">Yukon Territory</option>
+							</select>
+						</div>
+						<div><br>
+							<label for="postcode">Postal Code</label>
+							<input type="text" name="postcode" id="postcode" placeholder="L4M5V6" required>
+						</div><br>
+					</fieldset>	
+					<fieldset>
+						<legend>Item:</legend>
+						<div>
+							<label for="item">Select the item:</label>
+							<select id="item" name="items" required>
+								<option value="">choose...</option>
+								<option value="files">Steel Files</option>
+								<option value="cutting">Cutting wheels</option>
+								<option value="wheels">Grinding Wheels</option>
+								<option value="bits">Metal bits</option>
+								<option value="blades">Hacksaw blades</option>
+							</select>
+						</div>
+						<div><br>
+							<label for="quantity">Quantity:</label>
+							<input type="number" name="quantity" id="quantity" min="5" max="20" step="2" required>
+						</div><br>
+						<input type="submit" value="Confirm Order"><br> <br>         <!--submit button to send the information to another page-->
+						<p style="font-family:Verdana;color:orange;font-style:italic;">Click on the button below to reset your selection</p><br>
+						<input type="reset" value="Reset Selection"><br>              <!--Reset button to reset all the options selected-->
+					</fieldset>
+				</form>
+			</section><br>
+			<section style="font-size:24px; color:red;text-align:center;">	
+				<p><span style="text-decoration:underline;font-weight:bold;color:black;">Please note :</span> 20$ delivery fee will be charged for order below 100$, after that it will be free </p>
+			</section>
+			<section id="track" style="text-align:center;"><br>
+				<h2><span style="text-decoration:underline;">TRACK YOUR ORDER</span></h2><br><br>
+				<p>Please message on the number <strong>455-555-5555 </strong>to get your tracking form emailed to you.</p><br>
+				<span style="font-weight:bold;text-align:center;color:red;">OR</span>
+				<p>Email your order number and we will get back to you as soon as possible.</p>
+				<p>Cacellation or refund possible within 7 days of order received/placed</p>				<!--tracking form-->
+			</section>
+							
+			<footer>
+				<div id="f1">
+					<p>Email id- 200430408@student.georgianc.on.ca</p><br>
+					<p>Some images are taken from google</p>
+					<p>as relevant images could not be found</p>
+				</div>
+				<div id="f2">
+					<p>Address- 1 Georgian Drive,Barrie, L4M 3X9</p>
+				</div>
+				<div id="f3">											<!--content in the footer-->
+					<p>This is a school project</p>
+					<p>Semester-1</p>
+				</div>
+				<div id="f4">
+					<p>P.S- Barrie tool store is a fictious place</p>
+				</div>
+			</footer>
+			
+		</main>
+	</body>
+</html>

@@ -1,0 +1,177 @@
+		*{
+		margin:0;
+		padding:0;
+		}
+		
+		body{							/*bgcolor white making it simple and unique*/
+		background-color: white;
+		}
+
+		div.topline{
+		font-size:1.2em;
+		background-color:orange;
+		color:white;
+		height:45px;
+		text-align:center;							/*styling on the tagline */
+		padding-top:20px;
+		}
+		
+		ul{
+		text-align:right;
+		background-color:#164265;						/*wanted to change my ul from not being starting from left to make it unique*/
+		border: 2px ridge white;
+		}
+			
+		li{
+		color:white;
+		list-style-type:none;
+		display: inline-block;							/*some important styling on the first li elements */
+		position:relative;
+		font-size: 1.2em;
+		} 
+		
+		li#drill{
+		width:100px;
+		}
+		
+		li a{
+		color:#DFA216;
+		text-decoration:none;
+		padding: 10px;						/*the styling on anchor elements inside of the first li and using display: block to extend its clickable area as taught*/
+		text-align:center;
+		display:block;
+		}
+		
+		
+		li ul{
+		position: absolute;						/*property on ul inside of li element and ensured proper nesting*/
+		left: -9000px;
+		font-size:0.9em;
+		}
+			
+		li li{
+		float:none;
+		}
+		
+		li:hover ul{
+		left:auto;									/*to display the sublists of lists on hovering*/
+		}
+		
+		li a:hover{
+		color:#fff;								/*changing the color property on hovering on an anchor element to make it attractive*/
+		background-color:#DFA216;
+		}
+			
+		 li.search input[type=text]{
+		border-radius: 5px;								/*applying styling property to specific input type element*/
+		cursor: pointer;
+		}
+		
+		
+		input:focus{
+		border:2px outset blue;
+		}
+		
+		input[type=submit],input[type=reset]{
+		background-color:#7DEAE3;					/*using proper selectors*/
+		border:2px outset white;
+		}
+		
+		.btn{
+		border-radius:3px;
+		width:80px;									/*using a button and making its edges curved*/
+		}
+		
+		li.font{
+		font-family: 'Archivo Black', sans-serif;
+		font-size:1em;
+		font-weight:bold;
+		color:#DFA216;						/*using google font to make it look different from other link as putting home link of http://aws.computerstudi.es/~gcc200430408/index.html in it */
+		float:left;
+		}
+		
+		section#home2 p{
+		font-family:"Arial",Verdana,sans-serif;
+		font-size:24px;
+		text-align:center;							/*some basic styling on para on index.html*/
+		}
+		
+		section#images img, section#img2 img{
+		height:250px;
+		margin-left:300px;
+		border:2px outset; white;
+		}
+		
+		section.moreinfo{
+		text-align:center;
+		font-size:26px;
+		font-family:"Arial",Verdana,sans-serif;
+		color:red;
+		}
+		
+		section#drillpara p{
+		font-size:1.3em;
+		font-family:"Verdana",Arial,sans-serif;
+		text-align:center;										/*some basic styling on para on drill.html*/
+		color:#DD1E4F;
+		}
+		
+		section#drillpara2,section#drillpara3 p{
+		font-family:"Verdana",Arial,sans-serif;
+		font-size:1.2em;
+		}
+		
+		section#drillpara2 img, section#drillpara3 img{
+		font-family:"Verdana",Arial,sans-serif;
+		font-size:1.2em;
+		height:180px;
+		
+		}
+		
+		fieldset{
+		border: 2px solid darkgrey;
+		}
+		
+		section#track p{							/*some basic styling on para on form.html and certain form designing*/
+		font-size:25px;								/*to make it attractive*/
+		text-decoration:none;
+		}
+			
+
+		section h1{
+		text-align:center;
+		font-family:"Verdana",Arial,sans-serif;
+		}
+		
+		div#about p, div#para p{
+		text-align:center;
+		font-size:1.3em;
+		}
+		
+		section#contactimg img{
+		height:200px;
+		}
+		
+		section#contactimg p{
+		font-size:45px;
+		text-transform:capitalize;
+		}
+		
+		
+		footer{
+		background-color:orange;
+		float:left;
+		color:#164265;
+		margin-top:50px;					/*using footer to add on some info related to business*/
+		border: 2px solid #164265;
+		}
+		
+		#f1,#f2,#f3,#f4{
+		float:left;						/*some normal styling on footer*/
+		padding:15px;
+		margin:40px;
+		}
+		
+		#f1 p, #f2 p,#f3 p,#f4 p{
+		font-weight: bold;
+		}
